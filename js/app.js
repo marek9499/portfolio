@@ -21,7 +21,7 @@ function onPageLoad() {
     const darkModeBtn = document.querySelector('.darkModeSwitch');
     const isEnabledDM = localStorage.getItem('darkmode');
     const techBoxContainer = document.querySelector('.tech__box');
-    const skills = ['HTML5', 'CSS3', 'SCSS', 'OOCSS', 'BEM' ,'JS', 'ES5/ES6+', 'NODE.JS', 'EXPRESS.JS', 'VSCODE', 'ADOBE XD', 'REST', 'JQUERY', 'AJAX', 'JSON', 'MOBILE-FIRST', 'MYSQL', 'MONGODB'];
+    const skills = ['HTML5', 'CSS3', 'SCSS', 'OOCSS', 'BEM' ,'JS', 'ES5/ES6+', 'NODE.JS', 'EXPRESS.JS', 'VSCODE', 'ADOBE XD', 'REST', 'JQUERY', 'AJAX', 'JSON', 'MOBILE-FIRST', 'MYSQL', 'MONGODB' , 'GIT'];
 
     for(let i = 0; i < skills.length; i++)
     {
