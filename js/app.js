@@ -1,14 +1,9 @@
-const getStylesheetRule = selector => {
-    const currentStylesheet = document.styleSheets[0].cssRules;
-    const index = [...currentStylesheet].findIndex(e => e.selectorText == selector);
-    return currentStylesheet[index];
-}
-
 window.addEventListener('DOMContentLoaded', () => {
     onPageLoad();
 }, false);
 
 function appendSkillsToDOM() {
+    const techBoxContainer = document.querySelector('.tech__box');
     const skills = ['HTML5', 'CSS3', 'SCSS', 'OOCSS', 'BEM', 'JS', 'ES5/ES6+', 'NODE.JS', 'EXPRESS.JS', 'VSCODE', 'ADOBE XD', 'REST', 'JQUERY', 'AJAX', 'JSON', 'MOBILE-FIRST', 'MYSQL', 'MONGODB', 'GIT'];
 
     for (let i = 0; i < skills.length; i++) {
@@ -24,7 +19,8 @@ function onPageLoad() {
     const nav = document.querySelector('.navigation');
     const darkModeBtn = document.querySelector('.darkModeSwitch');
     const isEnabledDM = localStorage.getItem('darkmode');
-    const techBoxContainer = document.querySelector('.tech__box');
+
+    appendSkillsToDOM();
 
     hamburger.addEventListener('click', function () {
         hamburger.classList.toggle('hamburger--active');
