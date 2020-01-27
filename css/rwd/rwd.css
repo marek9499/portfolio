@@ -1,0 +1,144 @@
+@media only screen and (min-width: 480px) and (min-width: 768px) {
+  .header,
+  .screen__container,
+  .mouse_indicator,
+  .about__container,
+  .tech__container,
+  .projects__container,
+  .contact__container,
+  .footer__container {
+    width: 80%;
+  }
+  .screen__paragraph {
+    font-size: 14vw;
+  }
+  .header__icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__name {
+    font-size: 25px;
+    font-weight: 100;
+  }
+  .header__name::after {
+    content: "marek.kobylarczyk";
+  }
+  blockquote {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (min-width: 992px) {
+  .projects__item {
+    width: 45%;
+  }
+  .projects__item:not(:first-child):not(:nth-child(2)) {
+    margin-top: 60px;
+  }
+  .header__name {
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (min-width: 1200px) {
+  .header,
+  .screen__container,
+  .mouse_indicator,
+  .about__container,
+  .tech__container,
+  .projects__container,
+  .contact__container,
+  .footer__container {
+    width: 60%;
+  }
+  .header {
+    margin-bottom: 150px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__name {
+    font-size: 25px;
+    margin-top: 0px;
+  }
+  .header div:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .header__icons {
+    width: auto;
+    margin-left: 30px;
+  }
+  .header__box {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .screen__paragraph {
+    font-size: 10.5vw;
+  }
+  .hamburger {
+    display: none !important;
+  }
+  .navigation {
+    -webkit-transform: none;
+            transform: none;
+    height: 100%;
+  }
+  .navigation__list {
+    padding-top: 10px;
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .navigation__href {
+    color: #b8b8b8;
+  }
+  .navigation__href:hover {
+    color: black;
+  }
+  .href--active {
+    color: black;
+  }
+  .navigation__href {
+    display: inline-block;
+  }
+  .navigation__href::after {
+    display: block;
+    margin-top: 5px;
+    width: 0;
+    height: 2px;
+    background: #000;
+    -webkit-transition: width 0.25s ease-in-out;
+    transition: width 0.25s ease-in-out;
+    content: "";
+  }
+  .navigation__href:hover::after {
+    width: 100%;
+  }
+  .projects__item {
+    width: 45%;
+  }
+}
+/*# sourceMappingURL=rwd.css.map */

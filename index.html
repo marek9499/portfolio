@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="pl-PL" class=" no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Marek Kobylarczyk Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="Description" content="Portfolio Front-end developer Marek Kobylarczyk">
+    <meta name="keywords" content="Portfolio, Javascript, Front-end, Developer, Programista">
+    <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+
+<body>
+    <main>
+        <div style="height: 70vh;">
+            <div>
+                <header class="header">
+                    <p class="header__name"></p>
+
+
+                    <div class="header__box">
+                        <div class="header__icons icons">
+                            <div class="darkModeSwitch"></div>
+                            <div class="fb" data-link="https://facebook.com/marek.kobylarczyk"></div>
+                            <div class="git" data-link="http://github.com/marek9499"></div>
+                            <button class="hamburger">
+                                <span class="hamburger__box">
+                                    <span class="hamburger__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="header__control">
+                            <nav class="navigation">
+                                <ul class="navigation__list">
+                                    <li class="navigation__item">
+                                        <a class="navigation__href href--active" href="#">Strona główna</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a class="navigation__href" href="#about_scroll">O mnie</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a class="navigation__href" href="#projects_scroll">Projekty</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a class="navigation__href" href="#contact_scroll">Kontakt</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!--
+                    w razie gdyby cos sie zjebalo to tutaj ma byc ham
+                    <button class="hamburger">
+                        <span class="hamburger__box">
+                            <span class="hamburger__inner"></span>
+                        </span>
+                    </button>
+                    -->
+                </header>
+
+                <section class="screen">
+                    <div class="screen__container">
+                        <h1 class="screen__paragraph">Portfolio</h1>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div style="height: 30vh;">
+            <section class="mouse_indicator">
+                <img src="img/down.png" alt="mouse indicator down">
+            </section>
+        </div>
+
+        <section class="about" id="about_scroll">
+            <div class="about__container">
+                <h2>O mnie</h2>
+                <hr class="about__line">
+                <p class="about__desc">Cześć, mam na imię <b>Marek</b>, jestem absolwentem technikum informatycznego.
+                    Tworzeniem stron interesuję się już od małego.
+                    Ogromną satysfakcję daje mi doskonalenie się w języku Javascript ze względu na jego możliwości.
+                    Obecnie cały czas pogłębiam swoją wiedzę z tego zakresu. Czuję się zmotywowany aby każdego dnia
+                    nauczyć się czegoś nowego.<br><br>
+                    Oprócz umiejętności tworzenia aplikacji WWW od strony serwerowej, znam również podstawy UI. Nie są
+                    mi także obce programy typu Adobe XD czy Photoshop, chociaż
+                    znajomość tego drugiego ocenię jako podstawową.<br><br>
+                    W dzisiejszych czasach głównie korzystamy ze stron internetowych, używając
+                    smartfonów oraz
+                    tabletów, dlatego też tworząc witrynę, staram się ją głównie dostosować pod
+                    urządzenia mobilne. W dobie tak wielu technologii ważne jest, by nie tworzyć bałaganu w kodzie i aby
+                    w późniejszym czasie móc bezproblemowo rozwijać i pisać kolejne skrypty, których
+                    mocną stroną będzie szybkość działania.
+                </p>
+            </div>
+        </section>
+
+        <hr class="line">
+
+        <section class="tech">
+            <div class="tech__container">
+                <div class="tech__box">
+                    
+                </div>
+        </section>
+
+        <hr class="line">
+
+        <section class="projects" id="projects_scroll">
+            <div class="projects__container">
+                <h2 class="heading">Projekty</h2>
+                <hr class="projects__line">
+                <div class="projects__wrapper">
+
+
+                    <article class="projects__item">
+                        <div class="projects__up" data-desc="Lista zadań">
+                            <img alt="portfolio project image" src="img/project1.png">
+                        </div>
+                        <div class="projects__down">
+                            <div class="projects__techs">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>BEM</span>
+                            </div>
+                            <div class="icons">
+                                <div class="git" data-link="https://github.com/marek9499/todoapp"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__item">
+                        <div class="projects__up" data-desc="Rzeczoznawca majątkowy">
+                            <img alt="portfolio project image" src="img/project2.png">
+                        </div>
+                        <div class="projects__down">
+                            <div class="projects__techs">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>BEM</span>
+                            </div>
+                            <div class="icons">
+                                <div class="git" data-link="http://wycenykaczorowska.pl/"></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <hr class="line">
+
+        <section class="contact" id="contact_scroll">
+            <div class="contact__container">
+                <h2 class="heading">Współpraca</h2>
+                <hr class="contact__line">
+
+                <div class="contact__icons">
+                    <div class="contact__box">
+                        <span>Zapraszam do kontaktu </span>
+                        <span class="contact__icon">👉</span>
+                        <span class="contact__email">marek.kobylarczyk@gmail.com</span>
+                    </div>
+                    <div class="contact__box contact__box--center contact__box--padding">
+                        <span class="contact__icon">📕</span>
+                        <span data-link="/CV_MAREK_KOBYLARCZYK.pdf">CV.pdf</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <p>coded with ❤ by marek.kobylarczyk</p>
+            </div>
+        </footer>
+    </main>
+
+    <script defer src="js/app.js"></script>
+</body>
+
+</html>
