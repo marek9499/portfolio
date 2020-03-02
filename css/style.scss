@@ -269,10 +269,14 @@ main {
     }
 
     &__item {
-        height: auto;
+        height: 100%;
         width: 100%; //100% width only on mobile
         border-radius: 20px;
         box-shadow: 0px 0px 60px -28px rgba(0, 0, 0, 0.75);
+        &:not(:first-child)
+        {
+            margin-top: 20px;
+        }
     }
 
     &__up {
@@ -288,8 +292,10 @@ main {
     &__down {
         display: flex;
         justify-content: space-between;
-        padding: 15px;
-        align-items: center;
+        padding-left: 15px;
+        margin-top: 15px;
+        //margin-bottom: 15px;
+        align-items: flex-end;
     }
 
     &__techs {
@@ -298,11 +304,15 @@ main {
         span {
             border: 1px solid #444444;
             padding: 8px;
+            margin-bottom: 10px;
+            margin-right: 10px;
             font-size: 14px;
         }
+        /*
         span:not(:first-child) {
             margin-left: 10px;
         }
+        */
     }
 
     &__up {
