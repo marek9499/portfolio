@@ -34,8 +34,8 @@
   .projects__item {
     width: 45%;
   }
-  .projects__item:not(:first-child):not(:nth-child(2)) {
-    margin-top: 60px;
+  .projects__item:not(:first-child), .projects__item:not(:nth-child(2)) {
+    margin-top: 20px;
   }
   .header__name {
     margin-left: 25px;
