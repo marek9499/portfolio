@@ -81,11 +81,6 @@
                 order: 2;
             }
 
-            &__icons {
-                width: auto;
-                margin-left: 30px;
-            }
-
             &__box {
                 align-items: center;
                 width: 100%;
@@ -111,6 +106,7 @@
                 justify-content: flex-start;
                 align-items: center;
                 align-content: center;
+                margin-right: 10px;
             }
 
             &__href {
@@ -126,9 +122,9 @@
             color: black;
         }
 
-        .navigation__item:not(:nth-child(1))::before {
-            //content: "\00B7";
-            //margin-left: 20px;
+        .icons
+        {
+            width: 100px;
         }
 
         .navigation__href {

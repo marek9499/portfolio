@@ -47,6 +47,11 @@ main {
           filter: invert(1);
 }
 
+.darkmode .icons {
+  -webkit-filter: invert(0.64);
+          filter: invert(0.64);
+}
+
 .darkmode .projects__up:after, .darkmode .projects__up:before {
   -webkit-filter: invert(1);
           filter: invert(1);
@@ -57,45 +62,33 @@ main {
           filter: invert(1);
 }
 
-.icons > div {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin-bottom: 15px;
-  margin-right: 15px;
-  background-size: 100% 100%;
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.icons > div:hover {
+.icons .icon {
+  width: 25px;
+  height: 25px;
+}
+
+.icons a:hover {
   cursor: pointer;
 }
 
-.icons--inline {
-  display: inline-block;
-}
-
-.icons .darkModeSwitch {
-  background-image: url("../img/moon2.png");
-}
-
-.icons .darkModeSwitch:hover {
-  background-image: url("../img/moon.png");
-}
-
-.icons .fb {
-  background-image: url("../img/fb.png");
-}
-
-.icons .fb:hover {
-  background-image: url("../img/fb_outline.png");
-}
-
-.icons .git {
-  background-image: url("../img/git.png");
-}
-
-.icons .git:hover {
-  background-image: url("../img/git_outline.png");
+.icons--wider {
+  width: 170px;
 }
 
 .header {
@@ -138,25 +131,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.header__icons {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.header__icons div {
-  margin: 10px;
 }
 
 .header__control {
@@ -369,6 +343,14 @@ main {
   margin-bottom: 10px;
   margin-right: 10px;
   font-size: 14px;
+}
+
+.projects__icon {
+  position: relative;
+  bottom: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
 }
 
 .projects__up {
@@ -625,10 +607,6 @@ blockquote {
         -ms-flex-order: 2;
             order: 2;
   }
-  .header__icons {
-    width: auto;
-    margin-left: 30px;
-  }
   .header__box {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -665,6 +643,7 @@ blockquote {
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
+    margin-right: 10px;
   }
   .navigation__href {
     color: #b8b8b8;
@@ -674,6 +653,9 @@ blockquote {
   }
   .href--active {
     color: black;
+  }
+  .icons {
+    width: 100px;
   }
   .navigation__href {
     display: inline-block;

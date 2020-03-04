@@ -19,6 +19,7 @@ function onPageLoad() {
     const nav = document.querySelector('.navigation');
     const darkModeBtn = document.querySelector('.darkModeSwitch');
     const isEnabledDM = localStorage.getItem('darkmode');
+    const imgs = document.querySelectorAll("img");
 
     appendSkillsToDOM();
 
