@@ -236,6 +236,10 @@ main {
   background: transparent;
 }
 
+.tech h2 {
+  font-size: 35px;
+}
+
 .tech__container {
   width: 90%;
   margin: auto;
@@ -486,7 +490,7 @@ main {
 .line {
   background-color: #d8d8d8;
   border: 0;
-  margin: 50px 0 50px 0;
+  margin: 100px 0 100px 0;
 }
 
 blockquote {
@@ -534,7 +538,7 @@ blockquote {
   letter-spacing: -0.025em;
 }
 
-@media only screen and (min-width: 480px) and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .header,
   .screen__container,
   .mouse_indicator,
@@ -561,24 +565,98 @@ blockquote {
   .header__name::after {
     content: "marek.kobylarczyk";
   }
+  .about__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about__desc {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .tech__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .tech__box {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .tech h2 {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  .projects__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .projects__wrapper {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .contact__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact__icons {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
   blockquote {
     font-size: 18px;
   }
 }
 
-@media only screen and (min-width: 480px) and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .projects__item {
     width: 45%;
   }
-  .projects__item:not(:first-child), .projects__item:not(:nth-child(2)) {
-    margin-top: 20px;
+  .projects__item:nth-child(2) {
+    margin-top: 0;
+  }
+  .projects__item:not(:first-child):not(:nth-child(2)) {
+    margin-top: 55px;
   }
   .header__name {
     margin-left: 25px;
   }
 }
 
-@media only screen and (min-width: 480px) and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .header,
   .screen__container,
   .mouse_indicator,

@@ -1,154 +1,204 @@
 @media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+    .header,
+    .screen__container,
+    .mouse_indicator,
+    .about__container,
+    .tech__container,
+    .projects__container,
+    .contact__container,
+    .footer__container {
+        width: 80%;
+    }
+
+    .screen__paragraph {
+        font-size: 14vw;
+    }
+    .header {
+        &__icons {
+            flex-direction: row;
+        }
+
+        &__name {
+            font-size: 25px;
+            font-weight: 100;
+            &::after {
+                content: "marek.kobylarczyk";
+            }
+        }
+    }
+
+    .about {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        &__desc {
+            flex-basis: 70%;
+        }
+    }
+
+    .tech {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        &__box {
+            flex-basis: 70%;
+            justify-content: flex-start;
+        }
+
+        h2 {
+            flex-basis: 30%;
+        }
+    }
+
+    .projects {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        &__wrapper {
+            flex-basis: 70%;
+        }
+    }
+
+    .contact {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        &__icons
+        {
+            flex-basis: 70%;
+        }
+    }
+
+    blockquote {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
     .projects {
         &__item {
-            //width: 45%; //two items on small?
-        }
-    }
-
-    @media only screen and (min-width: 768px) {
-        .header,
-        .screen__container,
-        .mouse_indicator,
-        .about__container,
-        .tech__container,
-        .projects__container,
-        .contact__container,
-        .footer__container {
-            width: 80%;
-        }
-
-        .screen__paragraph {
-            font-size: 14vw;
-        }
-        .header {
-            &__icons {
-                flex-direction: row;
+            width: 45%;
+            &:nth-child(2) {
+                margin-top: 0;
             }
-
-            &__name {
-                font-size: 25px;
-                font-weight: 100;
-                &::after {
-                    content: "marek.kobylarczyk";
-                }
-            }
-        }
-
-        blockquote {
-            font-size: 18px;
-        }
-    }
-
-    @media only screen and (min-width: 992px) {
-        .projects {
-            &__item {
-                width: 45%;
-                &:not(:first-child), &:not(:nth-child(2)) {  
-                    margin-top: 20px;
-                }
-            }
-        }
-
-        .header {
-            &__name {
-                margin-left: 25px;
+            &:not(:first-child):not(:nth-child(2)) {
+                margin-top: 55px;
             }
         }
     }
 
-    @media only screen and (min-width: 1200px) {
-        .header,
-        .screen__container,
-        .mouse_indicator,
-        .about__container,
-        .tech__container,
-        .projects__container,
-        .contact__container,
-        .footer__container {
-            width: 60%;
+    .header {
+        &__name {
+            margin-left: 25px;
         }
-        .header {
-            margin-bottom: 150px;
-            justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header,
+    .screen__container,
+    .mouse_indicator,
+    .about__container,
+    .tech__container,
+    .projects__container,
+    .contact__container,
+    .footer__container {
+        width: 60%;
+    }
+    .header {
+        margin-bottom: 150px;
+        justify-content: space-between;
+        align-items: center;
+
+        &__name {
+            font-size: 25px;
+            margin-top: 0px;
+        }
+
+        & div:nth-child(2) {
+            order: 2;
+        }
+
+        &__box {
             align-items: center;
-
-            &__name {
-                font-size: 25px;
-                margin-top: 0px;
-            }
-
-            & div:nth-child(2) {
-                order: 2;
-            }
-
-            &__box {
-                align-items: center;
-                width: 100%;
-                flex-direction: row-reverse;
-            }
+            width: 100%;
+            flex-direction: row-reverse;
         }
-        .screen__paragraph {
-            font-size: 10.5vw;
-        }
+    }
+    .screen__paragraph {
+        font-size: 10.5vw;
+    }
 
-        .hamburger {
-            display: none !important;
-        }
+    .hamburger {
+        display: none !important;
+    }
 
-        .navigation {
-            transform: none;
+    .navigation {
+        transform: none;
+        height: 100%;
+
+        &__list {
+            padding-top: 10px;
             height: 100%;
-
-            &__list {
-                padding-top: 10px;
-                height: 100%;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: center;
-                align-content: center;
-                margin-right: 10px;
-            }
-
-            &__href {
-                color: rgb(184, 184, 184);
-            }
-
-            &__href:hover {
-                color: black;
-            }
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            margin-right: 10px;
         }
 
-        .href--active {
+        &__href {
+            color: rgb(184, 184, 184);
+        }
+
+        &__href:hover {
             color: black;
         }
+    }
 
-        .icons
-        {
-            width: 100px;
-        }
+    .href--active {
+        color: black;
+    }
 
-        .navigation__href {
-            display: inline-block;
-        }
+    .icons {
+        width: 100px;
+    }
 
-        .navigation__href::after {
-            display: block;
-            margin-top: 5px;
-            width: 0;
-            height: 2px;
-            background: #000;
-            transition: width 0.25s ease-in-out;
-            content: "";
-        }
+    .navigation__href {
+        display: inline-block;
+    }
 
-        .navigation__href:hover::after {
-            width: 100%;
-        }
+    .navigation__href::after {
+        display: block;
+        margin-top: 5px;
+        width: 0;
+        height: 2px;
+        background: #000;
+        transition: width 0.25s ease-in-out;
+        content: "";
+    }
 
-        .projects {
-            &__item {
-                width: 45%;
-            }
+    .navigation__href:hover::after {
+        width: 100%;
+    }
+
+    .projects {
+        &__item {
+            width: 45%;
         }
     }
 }
