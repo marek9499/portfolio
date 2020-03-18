@@ -1,4 +1,15 @@
 @media only screen and (min-width: 480px) {
+    .header
+    {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .icons
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -103,7 +114,7 @@
 
     .header {
         &__name {
-            margin-left: 25px;
+            //margin-left: 25px;
         }
     }
 }
@@ -117,7 +128,7 @@
     .projects__container,
     .contact__container,
     .footer__container {
-        width: 60%;
+        width: 80%;
     }
     .header {
         margin-bottom: 150px;
@@ -175,7 +186,7 @@
     }
 
     .icons {
-        width: 100px;
+        width: auto;
     }
 
     .navigation__href {
@@ -200,5 +211,18 @@
         &__item {
             width: 45%;
         }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .header,
+    .screen__container,
+    .mouse_indicator,
+    .about__container,
+    .tech__container,
+    .projects__container,
+    .contact__container,
+    .footer__container {
+        width: 60%;
     }
 }
