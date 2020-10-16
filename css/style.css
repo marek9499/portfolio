@@ -57,9 +57,13 @@ main {
           filter: invert(1);
 }
 
-.darkmode .contact__icon {
+.darkmode .about__icon, .darkmode .contact__icon, .darkmode .footer__icon {
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+.darkmode body {
+  background-color: white;
 }
 
 .icons {

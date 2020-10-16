@@ -59,10 +59,15 @@ main {
         }
     }
 
-    .contact {
+    .about, .contact, .footer {
         &__icon {
             filter: invert(1);
         }
+    }
+
+    body
+    {
+        background-color: white;
     }
 }
 
