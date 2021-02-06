@@ -92,7 +92,6 @@ main {
 body
 {
     background-color: #1b1b1b;
-    padding: 25px;
 }
 
 .header {
@@ -201,6 +200,11 @@ body
         letter-spacing: 0.1px;
         font-size: 18px;
         font-family: "Lato", sans-serif;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
     }
 
     h2 {
