@@ -7,7 +7,7 @@ function appendSkillsToDOM() {
     const skills = ['HTML5', 'CSS3', 'SCSS', 'SASS', 'BEM', 'JAVASCRIPT', 'TYPESCRIPT',
                     'ES5/ES6+', 'NODE.JS', 'EXPRESS.JS', 'VSCODE', 'ADOBE XD', 'FIGMA',
                     'REST', 'JQUERY', 'AJAX', 'JSON', 'MOBILE-FIRST', 'MYSQL', 'MONGODB',
-                    'GIT', 'GITHUB', 'ANGULAR', 'GULP'];
+                    'GIT', 'GITHUB', 'ANGULAR', 'RXJS', 'NGRX','GULP'];
 
     for (let i = 0; i < skills.length; i++) {
         let div = document.createElement('div');
@@ -22,7 +22,6 @@ function onPageLoad() {
     const nav = document.querySelector('.navigation');
     const darkModeBtn = document.querySelector('.darkModeSwitch');
     const isEnabledDM = localStorage.getItem('darkmode');
-    const imgs = document.querySelectorAll("img");
 
     appendSkillsToDOM();
 
